@@ -32,6 +32,7 @@ body #primary {
   color: black;
 }
 
+/* Contact form on contact page */
 .contactform-dropdown {
   padding: 0.8rem 0.5rem;
   border-color: darkgray;
@@ -42,6 +43,7 @@ body #primary {
   max-width: 600px;
 }
 
+/* Change gap between columns on contact page */
 .contact-columns {
   gap: 4em;
 }
@@ -50,4 +52,17 @@ body #primary {
   .contact-columns {
     gap: 1em;
   }
+}
+
+/* Change widget block bottom margin in footer */
+.footer-widgets .widget {
+  margin: 1em;
+}
+
+.widget_nav_menu ul li::before {
+  content: "";
+}
+
+.widget_nav_menu ul li {
+  padding-left: 0;
 }
