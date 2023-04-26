@@ -1,0 +1,13 @@
+/*
+Theme Name: Storefront Child
+Template: storefront
+Author: Grupp 2
+
+*/
+
+.home.blog .site-header,
+.home.page:not(.page-template-template-homepage) .site-header,
+.home.post-type-archive-product .site-header {
+  /*margin-bottom: 4.235801032em;*/
+  margin-bottom: 0;
+}
