@@ -11,3 +11,18 @@ Author: Grupp 2
   /*margin-bottom: 4.235801032em;*/
   margin-bottom: 0;
 }
+
+.latest-post-grupp2 {
+  background-color: #f9f9f9;
+  border: 1px #ededed solid;
+  border-radius: 5px;
+}
+
+.latest-post-grupp2 li {
+  padding: 15px;
+}
+
+.hentry .entry-content a {
+  text-decoration: none;
+  color: black;
+}
