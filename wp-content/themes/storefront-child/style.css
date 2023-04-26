@@ -12,6 +12,11 @@ Author: Grupp 2
   margin-bottom: 0;
 }
 
+body #primary {
+  float: none;
+  width: 100%;
+}
+
 .latest-post-grupp2 {
   background-color: #f9f9f9;
   border: 1px #ededed solid;
@@ -25,4 +30,14 @@ Author: Grupp 2
 .hentry .entry-content a {
   text-decoration: none;
   color: black;
+}
+
+.contactform-dropdown {
+  padding: 0.8rem 0.5rem;
+  border-color: darkgray;
+  color: #494949;
+}
+
+.contactform-message {
+  max-width: 600px;
 }
