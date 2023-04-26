@@ -41,3 +41,13 @@ body #primary {
 .contactform-message {
   max-width: 600px;
 }
+
+.contact-columns {
+  gap: 4em;
+}
+
+@media screen and (max-width: 782px) {
+  .contact-columns {
+    gap: 1em;
+  }
+}
