@@ -13,26 +13,42 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
 
-		<?php if (have_posts()) : ?>
 
-			<header class="page-header">
-				Hej hej
-				<?php
-				the_archive_title('<h1 class="page-title">', '</h1>');
-				the_archive_description('<div class="taxonomy-description">', '</div>');
-				?>
-			</header><!-- .page-header -->
+		<header class="page-header">
+			<?php
+			the_archive_title('<h1 class="page-title">', '</h1>');
+			the_archive_description('<div class="taxonomy-description">', '</div>');
+			?>
+		</header><!-- .page-header -->
 
 		<?php
-			get_template_part('loop');
+		$args = array(
+			'post_type' => 'butik',
+			'posts_per_page' => '10',
+			'orderby' => 'title', 'order' => 'ASC',
+		);
 
-		else :
+		$loop = new WP_Query($args);
 
-			get_template_part('content', 'none');
+		while ($loop->have_posts()) {
+			$loop->the_post();
 
-		endif;
 		?>
+			<a href="<?php the_permalink(); ?>">
+				<div class="butik-entry">
+					<div class="butik-entry-text">
+						<h3><?php the_title(); ?></h3>
 
+						<?php the_field('gatuadress'); ?>, <?php the_field('postnummer'); ?> <?php the_field('stad'); ?>
+					</div>
+					<div>
+						<?php the_post_thumbnail('thumbnail'); ?>
+					</div>
+				</div>
+			</a>
+		<?php
+		}
+		?>
 	</main><!-- #main -->
 </div><!-- #primary -->
 
