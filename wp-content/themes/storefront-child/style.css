@@ -67,6 +67,12 @@ body #primary {
   padding-left: 0;
 }
 
+/* Remove underline on links in footer */
+
+.site-footer a {
+  text-decoration: none;
+}
+
 /* Butik styling archive list */
 
 .butik-entry {
