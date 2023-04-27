@@ -66,3 +66,17 @@ body #primary {
 .widget_nav_menu ul li {
   padding-left: 0;
 }
+
+/* Butik styling archive list */
+
+.butik-entry {
+  background-color: #f9f9f9;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.butik-entry-text {
+  padding-left: 30px;
+}
