@@ -1,12 +1,7 @@
 <?php
 
 /**
- * The template for displaying all pages.
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site will use a
- * different template.
+ * The template for displaying all single posts.
  *
  * @package storefront
  */
@@ -21,16 +16,11 @@ get_header(); ?>
                 while (have_posts()) :
                     the_post();
 
-                    do_action('storefront_page_before');
+                    do_action('storefront_single_post_before');
 
-                    get_template_part('content', 'page');
+                    get_template_part('content', 'single');
 
-                    /**
-                     * Functions hooked in to storefront_page_after action
-                     *
-                     * @hooked storefront_display_comments - 10
-                     */
-                    do_action('storefront_page_after');
+                    do_action('storefront_single_post_after');
 
                 endwhile; // End of the loop.
                 ?>
