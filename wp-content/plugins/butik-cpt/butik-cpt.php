@@ -15,8 +15,9 @@ function butik_custom_post_type()
                 'singular_name' => 'Butik',
             ),
             'public'      => true,
-            'has_archive' => true,
+            'has_archive' => false,
             'show_in_rest' => true,
+            'supports' => array('thumbnail', 'editor'),
         )
     );
 }
