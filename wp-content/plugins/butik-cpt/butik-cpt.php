@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Butik CPT
-Description: Just another contact form plugin. Simple but flexible.
+Description: Create Custom Post Type Butiker.
 Author: Grupp 2
 */
 
