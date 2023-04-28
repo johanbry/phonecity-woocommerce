@@ -27,10 +27,10 @@ body #primary {
   padding: 15px;
 }
 
-.hentry .entry-content a {
+/* .hentry .entry-content a {
   text-decoration: none;
   color: black;
-}
+} */
 
 /* Contact form on contact page */
 .contactform-dropdown {
@@ -85,4 +85,41 @@ body #primary {
 
 .butik-entry-text {
   padding-left: 30px;
+}
+
+/* Checkout */
+
+.woocommerce-checkout #masthead {
+  border-bottom: none;
+}
+
+.woocommerce-checkout footer {
+  display: none;
+}
+
+.woocommerce-checkout #checkout-phone {
+  background-color: #f8f8f8;
+  padding: 15px;
+  margin-top: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.woocommerce-checkout #checkout-cart-link {
+  background-color: #f8f8f8;
+  padding: 15px;
+  margin: 25px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.woocommerce-checkout #checkout-cart-link a {
+  text-decoration: none;
+  color: rgb(101, 101, 101);
 }
